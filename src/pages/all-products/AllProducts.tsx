@@ -109,7 +109,7 @@ const AllProducts = () => {
             </h3>
 
             {/* Search + Sort */}
-            <div className="flex flex-col sm:flex-row gap-2 items-center">
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
               <input
                 type="text"
                 placeholder="Search products..."
@@ -118,12 +118,12 @@ const AllProducts = () => {
                   setSearchTerm(e.target.value);
                   setCurrentPage(1);
                 }}
-                className="border border-gray-300 dark:border-gray-600 px-3 py-2 rounded-md w-60"
+                className="border border-gray-300 dark:border-gray-600 px-3 py-2 rounded-md w-80"
               />
               <select
                 value={sortOption}
                 onChange={(e) => setSortOption(e.target.value)}
-                className="border border-gray-300 dark:border-gray-600 px-3 py-2 rounded-md"
+                className="border border-gray-300 bg-background dark:border-gray-600 px-3 py-2 rounded-md"
               >
                 <option value="">Default</option>
                 <option value="low">Low to High</option>
