@@ -132,11 +132,14 @@ const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         />
 
         {/* Upload Image */}
-        <UploadImage
-          label="Image"
-          name="image"
-          setImage={setImage}
-        />
+<UploadImage
+  label="Image"
+  name="image"
+  id="product-image"
+  value={image}
+  setImage={setImage}
+/>
+
 
         {/* Description */}
         <div>

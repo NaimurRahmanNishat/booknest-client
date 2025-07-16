@@ -6,7 +6,9 @@ interface UploadImageProps {
   value: string;
   setImage: (image: string) => void;
   placeholder?: string;
+  label?: string; // ✅ added
 }
+
 
 const UploadImage: React.FC<UploadImageProps> = ({
   name,
